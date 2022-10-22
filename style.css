@@ -360,5 +360,6 @@ footer {
 .footer_contact li {
     display: flex;
 }
-
-
+ .footer_contact p {
+    margin-left: 10px;
+ }

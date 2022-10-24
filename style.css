@@ -5,7 +5,6 @@
 }
 
 body {
-    /*background-color: #f8e9f0;*/
     font-family: 'Nunito', sans-serif;
 }
 
@@ -62,12 +61,12 @@ header {
 
 #home {
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 
 .home_img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     /*position: fixed;*/
 
@@ -99,12 +98,12 @@ header {
 /*TRATAMIENTOS*/
 
 #tratamientos {
-    margin-top: 50px;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: -200px;
 }
 
 .tratamientos_img {
@@ -149,7 +148,6 @@ header {
     color: black;
     border: 2px solid;
     border-color: #de95a7;
-    ;
 }
 
 .back {
@@ -197,45 +195,36 @@ header {
     flex-direction: column;
 }
 
-.turnos h2,
-.turnos p,
-.whatsapp_button {
-    margin: 70px 0px 70px 0px;
+.turnos h2, .turnos h3, .whatsapp_button {
+    margin: 70px auto;
+}
 
+.whatsapp_button, .whatsapp_button:hover {
+    border: 2px solid green;
+    background-color: #03C100;
+    color: black;
 }
 
 .whatsapp_button {
-    border: 1px solid;
     border-radius: 50px;
     text-decoration: none;
-
-    padding: 5px 10px 5px 10px;
+    padding: 5px 20px 5px 20px;
     font-weight: bold;
-    color: green;
-
-    margin-left: 40%;
-    margin-right: 40%;
 }
 
 .whatsapp_button:hover {
-    background-color: rgba(0, 128, 0, 0.473);
-    color: white;
-    /*transition: all 1.5s ease;*/
-    /*transform: scale(1.1);*/
-
+    transform: scale(1.1);
 }
 
 /*UBICACIÓN*/
 
 #ubicacion {
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
-
 
 .ubicacion_mapa {
     display: flex;
@@ -280,7 +269,7 @@ header {
 
 #tienda {
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 
 .text {
@@ -298,17 +287,20 @@ header {
 }
 
 .item {
-    border: 3px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .first {
     grid-row: 1 / span 2;
-    background-color: #de95a7;
+    border: 3px solid pink;
 }
 
 .shop img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    border: 3px solid pink;
 }
 
 /*FOOTER*/
@@ -317,7 +309,6 @@ footer {
     height: 100%;
     width: 100%;
     background-color: pink;
-    margin-top: 70px;
 }
 
 /*FOOTER SOCIAL*/

@@ -26,20 +26,23 @@ header {
 }
 
 .header_menu {
-    align-items: right;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     margin-right: 20px;
 }
 
 .header_menu ul li {
     list-style-type: none;
     display: inline;
-    justify-content: space-between;
+
     font-size: small;
     font-weight: bold;
+
     margin-left: 10px;
     padding: 2px 20px;
+
     border: 1px solid rgba(177, 22, 130, 0.3);
     border-radius: 20px;
     box-shadow: inset 0px 0px 70px 0px rgba(225, 160, 190, 1);
@@ -51,10 +54,10 @@ header {
 }
 
 .header_nav ul li:hover {
-    text-decoration: none;
-    /*color: thistle;*/
     box-shadow: inset 0px 0px 42px 0px rgba(255, 240, 245, 1);
+    color: black;
 }
+
 
 /*MAIN*/
 /*HOME*/

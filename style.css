@@ -11,19 +11,17 @@ body {
 /*HEADER*/
 
 header {
+    width: auto;
     height: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-
 }
 
 .header_logo {
     margin-top: 2px;
     width: auto;
     height: auto;
-    /*display: flex;
-    align-items: left;*/
 }
 
 .header_logo img {
@@ -31,7 +29,7 @@ header {
 }
 
 .header_menu {
-    width: 50%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;

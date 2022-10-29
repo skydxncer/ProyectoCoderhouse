@@ -13,6 +13,49 @@
     <title>Consultorio Dermatológico</title>
 </head>
 
+<script>
+    var subjectObject = {
+        "Front-end": {
+    "HTML": ["Links", "Images", "Tables", "Lists"],
+    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
+  },
+  "Capilares": ["Variables", "Operators", "Functions", "Conditions"], 
+  "Back-end": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+        }
+    }
+    window.onload = function () {
+        var subjectSel = document.getElementById("subject");
+        var topicSel = document.getElementById("topic");
+        var chapterSel = document.getElementById("chapter");
+        for (var x in subjectObject) {
+            subjectSel.options[subjectSel.options.length] = new Option(x, x);
+        }
+        subjectSel.onchange = function () {
+            //empty Chapters- and Topics- dropdowns
+            chapterSel.length = 1;
+            topicSel.length = 1;
+            //display correct values
+            for (var y in subjectObject[this.value]) {
+                topicSel.options[topicSel.options.length] = new Option(y, y);
+            }
+        }
+        topicSel.onchange = function () {
+            //empty Chapters dropdown
+            chapterSel.length = 1;
+            //display correct values
+            var z = subjectObject[subjectSel.value][this.value];
+            for (var i = 0; i < z.length; i++) {
+                chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+            }
+        }
+    }
+</script>
+
+
+
 <body>
 
     <!---- HEADER ---->
@@ -20,7 +63,7 @@
     <header>
 
         <div class="header_logo">
-            <img src="./images/nav_logo.png" alt="Dra. Lorem Ipsum" class="header_img">
+            <img src="./images/nav_logo.png" alt="Dra. Julia Weiss" class="header_img">
 
         </div>
 
@@ -50,7 +93,7 @@
 
             <div class="home_title">
                 <h1>| Dra. Julia Weiss | Dermatología y estética |</h1>
-                <p class="home_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p class="home_text">Tratamientos de belleza y cuidado de la piel que funcionan.
                 </p>
             </div>
 
@@ -86,7 +129,7 @@
             <div class="flip_card">
                 <div class="card">
                     <div class="front">
-                        <img src="./images/tratamientos.jpg" alt="Corporales" class="tratamientos_img">
+                        <img src="./images/tratamientos2.jpg" alt="Corporales" class="tratamientos_img">
                         <h2>Corporales</h2>
                     </div>
 
@@ -96,7 +139,7 @@
                             <li>Mesoterapia francesa</li>
                             <li>Plasma Rico en Plaquetas</li>
                             <li>Peeling</li>
-                            <li>Lorem</li>
+
                         </ul>
                     </div>
                 </div>
@@ -107,7 +150,7 @@
             <div class="flip_card">
                 <div class="card">
                     <div class="front">
-                        <img src="./images/tratamientos.jpg" alt="Capilares" class="tratamientos_img">
+                        <img src="./images/tratamientos3.jpg" alt="Capilares" class="tratamientos_img">
                         <h2>Capilares</h2>
                     </div>
 
@@ -115,9 +158,6 @@
                         <ul class="lista_tratamientos">
                             <li>PRP</li>
                             <li>Mesoterapia</li>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
                         </ul>
                     </div>
                 </div>
@@ -165,7 +205,12 @@
 
             <!-- Items tienda -->
             <div class="container_grid">
-                <div class="item first">1</div>
+                <div class="item first">
+                    <form name="form1" id="form1" action="/action_page.php">
+                        <select name="subject" id="subject">
+                            <option value="" selected="selected">Select subject</option>
+                        </select>
+                </div>
 
                 <div class="item shop">
                     <img src="./images/tienda_item.jpg" alt="Item tienda">
@@ -200,16 +245,19 @@
     <!--- FOOTER ---->
 
     <footer>
-        
+
         <!--REDES SOCIALES-->
 
         <div class="footer_social">
             <ul>
-                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/instagram-insta.avif" alt="Instagram"></a></li>
-                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/facebook-fb.avif" alt="Facebook"></a></li>
-                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/linkedin.avif" alt="Linked In"></a></li>
+                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/instagram-insta.avif"
+                            alt="Instagram"></a></li>
+                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/facebook-fb.avif"
+                            alt="Facebook"></a></li>
+                <li><a href="#"><img src="https://www.iconshock.com/3D/social/png/thumbnails/linkedin.avif"
+                            alt="Linked In"></a></li>
             </ul>
-        </div>   
+        </div>
 
         <!--CONTAINER CONTACTO - LOGO - LEGAL-->
 
@@ -219,9 +267,21 @@
 
             <div class="footer_contact">
                 <ul>
-                    <li><a href="#" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/phone2-256.png" alt="Teléfono"></a><p>Teléfono</p></li>
-                    <li><a href="#" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/message-512.png" alt="E-mail"></a><p>Email</p></li>
-                    <li><a href="#" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/location-512.png" alt="Ubicación"></a><p>Ubicación</p></li>
+                    <li><a href="#" target="_blank"><img
+                                src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/phone2-256.png"
+                                alt="Teléfono"></a>
+                        <p>Teléfono</p>
+                    </li>
+                    <li><a href="#" target="_blank"><img
+                                src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/message-512.png"
+                                alt="E-mail"></a>
+                        <p>Email</p>
+                    </li>
+                    <li><a href="#" target="_blank"><img
+                                src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/location-512.png"
+                                alt="Ubicación"></a>
+                        <p>Ubicación</p>
+                    </li>
                 </ul>
             </div>
 
@@ -234,8 +294,8 @@
             <!--LEGALES-->
 
             <div class="footer_legales">
-                    <p>Todos los derechos reservados</p>
-                    <p>Dra. Julia Weiss</p>
+                <p>Todos los derechos reservados</p>
+                <p>Dra. Julia Weiss</p>
             </div>
 
         </div>

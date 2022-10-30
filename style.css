@@ -72,7 +72,7 @@ header {
 }
 
 .image_cover {
-    background-image: url(/images/home_cover.jpg);
+    background-image: url(./images/home_cover.jpg);
     min-height: 500px; 
     
     background-attachment: fixed;

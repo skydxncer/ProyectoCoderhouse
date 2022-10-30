@@ -68,21 +68,29 @@ header {
 #home {
     width: 100%;
     height: 700px;
+
 }
 
-.home_img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    /*position: fixed;*/
+.image_cover {
+    background-image: url(/images/home_cover.jpg);
+    min-height: 500px; 
+    
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+
+.home_img {
+    /*width: 100%;
+    /*height: 70%;
+    /*object-fit: cover;*/
 }
 
 .home_title {
 
     margin: 0px 0px 0px 20px;
-    position: relative;
-
     box-sizing: border-box;
     line-height: 30px;
     font-size: large;
@@ -185,8 +193,9 @@ header {
 }
 
 .lista_tratamientos {
-    background-color: #03C100;
+    background-color: pink;
     width: auto;
+ 
     
 }
 
@@ -333,12 +342,19 @@ header {
 .first {
     grid-row: 1 / span 2;
     border: 3px solid pink;
+    padding: 0%;
+    align-items: stretch;
 }
 
 .shop img {
     width: 90%;
     height: 90%;
     border: 3px solid pink;
+}
+
+#subject {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 /*FOOTER*/

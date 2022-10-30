@@ -10,22 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <title>Consultorio Dermatológico</title>
 </head>
 
 <script>
     var subjectObject = {
-    "Rostro": {
-    "Lasin": ["Links", "Images", "Tables", "Lists"],
-    "CSS": ["Borders", "Margins", "Float"]}, 
+        "Rostro": {
+            "Lasin": ["Links", "Images", "Tables", "Lists"],
+            "CSS": ["Borders", "Margins", "Float"]
+        },
 
-  "Cabello": {
-    "Lasin": ["Links", "Images", "Tables", "Lists"],
-    "CSS": ["Borders", "Margins", "Float"]},
-  
-  "Cuerpo": {
-    "PHP": ["Variables", "Strings", "Arrays"],
-    "SQL": ["SELECT", "UPDATE", "DELETE"]}
+        "Cabello": {
+            "Lasin": ["Links", "Images", "Tables", "Lists"],
+            "CSS": ["Borders", "Margins", "Float"]
+        },
+
+        "Cuerpo": {
+            "PHP": ["Variables", "Strings", "Arrays"],
+            "SQL": ["SELECT", "UPDATE", "DELETE"]
+        }
 
     }
     window.onload = function () {
@@ -103,7 +109,7 @@
 
             </div>
 
-         <!--- <img src="./images/home_cover.jpg" alt="Dra. Julia Weiss" class="home_img">
+            <!--- <img src="./images/home_cover.jpg" alt="Dra. Julia Weiss" class="home_img">
          --->
 
         </section>
@@ -176,8 +182,8 @@
         <!---- TURNOS ---->
 
         <section id="turnos">
-            <div class="turnos">
-                <h2>¿Necesitas solicitar un turno?</h2>
+            <div class="turnos" data-aos="fade-down">
+                <h2 >¿Necesitas solicitar un turno?</h2>
                 <h3>¡Escribinos!</h3>
                 <a href="#" class="whatsapp_button" target="_blank">Whatsapp</a>
             </div>
@@ -310,6 +316,13 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        }
+        );
+      </script>
 
 </body>
 

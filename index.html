@@ -11,60 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     <title>Consultorio Dermatológico</title>
 </head>
 
-<script>
-    var subjectObject = {
-        "Rostro": {
-            "Lasin": ["Links", "Images", "Tables", "Lists"],
-            "CSS": ["Borders", "Margins", "Float"]
-        },
 
-        "Cabello": {
-            "Lasin": ["Links", "Images", "Tables", "Lists"],
-            "CSS": ["Borders", "Margins", "Float"]
-        },
-
-        "Cuerpo": {
-            "PHP": ["Variables", "Strings", "Arrays"],
-            "SQL": ["SELECT", "UPDATE", "DELETE"]
-        }
-
-    }
-    window.onload = function () {
-        var subjectSel = document.getElementById("subject");
-        var topicSel = document.getElementById("topic");
-        var chapterSel = document.getElementById("chapter");
-        for (var x in subjectObject) {
-            subjectSel.options[subjectSel.options.length] = new Option(x, x);
-        }
-        subjectSel.onchange = function () {
-
-            chapterSel.length = 1;
-            topicSel.length = 1;
-
-            for (var y in subjectObject[this.value]) {
-                topicSel.options[topicSel.options.length] = new Option(y, y);
-            }
-        }
-        topicSel.onchange = function () {
-
-            chapterSel.length = 1;
-
-            var z = subjectObject[subjectSel.value][this.value];
-            for (var i = 0; i < z.length; i++) {
-                chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-            }
-        }
-    }
-</script>
-
-
-
-<body>
+<body id="body">
 
     <!---- HEADER ---->
 
@@ -212,20 +166,25 @@
 
         <section id="tienda">
 
-            <!-- Menú desplegable -->
             <div class="text">
                 <h2>Tienda</h2>
             </div>
 
-            <!-- Items tienda -->
+            <!-- Menú desplegable -->
             <div class="container_grid">
                 <div class="item first">
-                    <form name="form1" id="form1" action="/action_page.php">
-                        <select name="subject" id="subject">
-                            <option value="" selected="selected">Todos</option>
+                    <button type="button" class="btn btn-primary dropdown-toggle" id="btn-color" data-bs-toggle="dropdown">
+                        Filtro
+                    </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cremas</a></li>
+                        <li><a class="dropdown-item" href="#">Capilares</a></li>
+                        <li><a class="dropdown-item" href="#">Corporales</a></li>
+                      </ul>
                         </select>
                 </div>
 
+                <!-- Items tienda -->
                 <div class="item shop">
                     <img src="./images/tienda_item.jpg" alt="Item tienda">
                     <h4>Item genérico</h4>
@@ -323,6 +282,8 @@
         }
         );
       </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

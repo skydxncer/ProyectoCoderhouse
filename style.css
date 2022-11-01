@@ -6,6 +6,7 @@
 
 #body {
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
 /*HEADER*/
@@ -172,7 +173,8 @@ header {
     border-color: #e7e6e9;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    flex-direction: row;
 }
 
 .front h2 {
@@ -189,7 +191,7 @@ header {
     text-align: center;
     font-size: large;
     font-weight: bold;
-    background-color: rgb(231, 230, 233, 0.5)
+    background-color: rgb(231, 230, 233, 0.5);
 }
 
 .lista_tratamientos {
@@ -250,34 +252,40 @@ header {
 }
 
 
-/*UBICACIÓN*/
+/*UBICACIÓN--CONTACTO*/
 
 #ubicacion {
     width: 100%;
-    margin: 150px 0px 150px 0px;
+    /*margin: 150px 0px 150px 0px;*/
     height: auto;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-top: 5%;
-
-    
 }
 
-/*Media query*/
+/****Media query****/
 
 @media (max-width: 575.98px) { 
     #ubicacion {
+        display: flex;
         flex-direction: column;
+        margin: 0px;
+        height: 700px;
+    }
+
+    .ubicacion_contacto h2 {
+        display: flex;
+        justify-content: center;
     }
  }
 
-/****/
+/**************/
 
 .ubicacion_mapa {
     display: flex;
     justify-content: center;
-    border: 2px solid black;
     margin: 0;
 }
 
@@ -287,18 +295,25 @@ header {
     margin: 0;
 }
 
+.formulario_mail, .formulario_texto {
+    padding: 5px;
+}
+
 .formulario_mail,
 .enviar_mensaje {
     margin-bottom: 30px;
-    width: 100%;
+    width: 90%;
     height: 30px;
+    margin: 5px;
 }
 
 .formulario_texto {
     margin-bottom: 30px;
-    width: 100%;
+    width: 90%;
     height: 70px;
+    margin: 5px;
 }
+
 
 .enviar_mensaje {
     background-color: #de95a7;
@@ -350,6 +365,7 @@ header {
     grid-row: 1 / span 2;
     padding: 0%;
     align-items: stretch;
+    
 }
 
 .shop img {

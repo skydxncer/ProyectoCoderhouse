@@ -196,21 +196,18 @@ header {
 
 .lista_tratamientos {
     width: 100%;
+
 }
 
 
 /*media query*/
 
-/*@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) { 
     #tratamientos {
         flex-direction: column;
         height: auto;
     }
-
-    .flip_card {
-        margin: 10%;
-        margin-top: 10px;
-    }*/
+}
 
 /*****/
 
@@ -263,6 +260,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding-top: 5%;
+
 }
 
 /****Media query****/
@@ -278,6 +276,11 @@ header {
     .ubicacion_contacto h2 {
         display: flex;
         justify-content: center;
+    }
+
+    .ubicacion_contacto {
+        display: flex;
+        flex-direction: column;
     }
  }
 

@@ -45,7 +45,7 @@ header {
     font-weight: bold;
 
     margin-left: 10px;
-    padding: 2px 20px;
+    padding: 0px 20px;
 
     border: 1px solid rgba(177, 22, 130, 0.3);
     border-radius: 20px;
@@ -57,10 +57,11 @@ header {
     color: black;
 }
 
-.header_nav ul li:hover {
+.header_menu ul li:hover {
     box-shadow: inset 0px 0px 42px 0px rgba(255, 240, 245, 1);
     color: black;
 }
+
 
 
 /*MAIN*/

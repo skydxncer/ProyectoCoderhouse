@@ -34,19 +34,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 20px;
 }
 
 .header_menu ul li {
     list-style-type: none;
-    display: inline;
-
     font-size: small;
     font-weight: bold;
 
     margin-left: 10px;
     padding: 0px 20px;
-
+    margin-top: 10px;
     border: 1px solid rgba(177, 22, 130, 0.3);
     border-radius: 20px;
     box-shadow: inset 0px 0px 70px 0px rgba(225, 160, 190, 1);
@@ -63,7 +60,9 @@ header {
 }
 
 
-
+.bg-light {
+    background-color: white;
+}
 /*MAIN*/
 /*HOME*/
 
@@ -119,7 +118,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 .tratamientos_img {
@@ -156,7 +155,6 @@ header {
     position: absolute;
     width: 100%;
     backface-visibility: hidden;
- 
 }
 
 .front {
@@ -183,7 +181,6 @@ header {
     bottom: 60%;
     color: black;
 }
-
 
 .lista_tratamientos li {
     list-style-type: none;
@@ -236,8 +233,8 @@ header {
 }
 
 .whatsapp_button, .whatsapp_button:hover {
-    border: 2px solid green;
-    background-color: #03C100;
+    border: 2px solid #03c100a9;
+    background-color: #03c10094;
     color: black;
 }
 
@@ -264,7 +261,6 @@ header {
     align-items: center;
     justify-content: space-around;
     padding-top: 5%;
-
 }
 
 /****Media query****/

@@ -403,6 +403,7 @@ footer {
 .footer_social ul {
     display: flex;
     margin-top: -30px;
+    margin-left: -10%;
 }
 
 .footer_social ul li {
@@ -444,13 +445,31 @@ footer {
     margin-left: 10px;
  }
 
- /*lEGALES*/
+ /*FOOTER LOGO*/
 
- .footer_legales {
-    margin-right: 20px;
+
+ .footer_logo img {
+    width: 10%;
+    height: auto;
  }
 
  .footer_logo {
-    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
+
+
+ /*FOOTER LEGALES*/
+
+ .footer_legales {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+
+
 

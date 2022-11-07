@@ -5,6 +5,7 @@ main {
     #home {
         width: 100%;
         height: 700px;
+       
 
         .home_title {
             margin: 0px 0px 0px 20px;
@@ -14,7 +15,7 @@ main {
             color: #000;
             animation: cssAnimation_0 3000ms 1 ease;
             text-shadow: 0px 0px 8px rgb(255, 255, 255);
-           
+            
             h1 {
                 /*No agregar*/
             }
@@ -23,12 +24,17 @@ main {
         }
 
         .image_cover {
-            background-image: url(./images/home_cover.jpg);
+          
+            background-image: url("https://i.ibb.co/6y5BXLp/home-cover.jpg");
             min-height: 500px;
             background-attachment: fixed;
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
+           
+            img {
+              width: 100%;
+            }
         }
 
         @keyframes cssAnimation_0 {
@@ -49,6 +55,7 @@ main {
         justify-content: space-around;
         align-items: center;
         margin-top: -100px;
+       
 
         .flip_card {
             background-color: transparent;

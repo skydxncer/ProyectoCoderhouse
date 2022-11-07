@@ -63,12 +63,15 @@ main #home .home_title h1 {
   /*No agregar*/
 }
 main #home .image_cover {
-  background-image: url(./images/home_cover.jpg);
+  background-image: url("https://i.ibb.co/6y5BXLp/home-cover.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+main #home .image_cover img {
+  width: 100%;
 }
 @keyframes cssAnimation_0 {
   from {

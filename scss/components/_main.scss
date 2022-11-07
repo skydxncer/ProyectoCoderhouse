@@ -14,7 +14,7 @@ main {
             color: #000;
             animation: cssAnimation_0 3000ms 1 ease;
             text-shadow: 0px 0px 8px rgb(255, 255, 255);
-
+           
             h1 {
                 /*No agregar*/
             }
@@ -23,7 +23,7 @@ main {
         }
 
         .image_cover {
-            background-image: url(/images/home_cover.jpg);
+            background-image: url(./images/home_cover.jpg);
             min-height: 500px;
             background-attachment: fixed;
             background-position: top;
@@ -57,7 +57,6 @@ main {
             perspective: 1000px;
             display: inline-block;
             align-items: center;
-
 
             .card {
                 position: relative;

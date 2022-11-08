@@ -291,11 +291,15 @@ main {
                         
                         h5 {
                             font-weight: bold;
+                      
                         }
-                        p {}
+                        p {
+                            
+                        }
                         a {
                         background-color: $bg-general;
                         border: 1px solid $bg-general;
+                        color: #000;
                         &:hover {
                         background-color: $bg-hover;
                         }

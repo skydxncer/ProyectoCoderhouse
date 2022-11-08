@@ -119,7 +119,7 @@ main #tratamientos .flip_card .card .front img {
   width: 400px;
   height: 300px;
   border: 2px solid;
-  border-color: #de95a7;
+  border-color: #facbd4;
   border-radius: 10px;
 }
 main #tratamientos .flip_card .card .front h2 {
@@ -132,7 +132,7 @@ main #tratamientos .flip_card .card .back {
   width: 100%;
   height: 300px;
   backface-visibility: hidden;
-  background-color: #de95a7;
+  background-color: #facbd4;
   color: #000000;
   transform: rotateY(180deg);
   border: 2px solid;
@@ -165,7 +165,7 @@ main #turnos div {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-color: #de95a7;
+  background-color: #facbd4;
 }
 main #turnos div h2,
 main #turnos div h3 {
@@ -201,7 +201,7 @@ main #ubicacion .ubicacion_mapa {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  border: 2px solid #de95a7;
+  border: 2px solid #facbd4;
 }
 main #ubicacion .ubicacion_mapa iframe {
   width: 100%;
@@ -228,7 +228,7 @@ main #ubicacion .ubicacion_contacto textarea {
   height: 100px;
 }
 main #ubicacion .ubicacion_contacto button {
-  background-color: #de95a7;
+  background-color: #facbd4;
   color: #000;
   border-radius: 50px;
   text-decoration: none;
@@ -270,8 +270,8 @@ main #tienda .container_grid .first {
   align-items: stretch;
 }
 main #tienda .container_grid .first button {
-  background-color: #de95a7;
-  border: 1px solid #de95a7;
+  background-color: #facbd4;
+  border: 1px solid #facbd4;
 }
 main #tienda .container_grid .shop .card {
   width: 100%;
@@ -285,8 +285,9 @@ main #tienda .container_grid .shop .card .card-body h5 {
   font-weight: bold;
 }
 main #tienda .container_grid .shop .card .card-body a {
-  background-color: #de95a7;
-  border: 1px solid #de95a7;
+  background-color: #facbd4;
+  border: 1px solid #facbd4;
+  color: #000;
 }
 main #tienda .container_grid .shop .card .card-body a:hover {
   background-color: #ff748c;
@@ -295,7 +296,7 @@ main #tienda .container_grid .shop .card .card-body a:hover {
 footer {
   height: 100%;
   width: 100%;
-  background-color: #de95a7;
+  background-color: #facbd4;
 }
 footer .footer_social {
   display: flex;

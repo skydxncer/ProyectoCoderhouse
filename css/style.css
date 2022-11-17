@@ -207,7 +207,8 @@ main #ubicacion .ubicacion_mapa iframe {
   width: 100%;
   height: 300px;
 }
-main #ubicacion .ubicacion_contacto { /*Agregado de media query*/
+main #ubicacion .ubicacion_contacto {
+  /*Agregado de media query*/
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -254,44 +255,94 @@ main #tienda .text {
   text-align: center;
   flex-direction: column;
 }
-main #tienda .container_grid {
-  display: grid;
-  grid-template-rows: repeat(2, 400px);
-  grid-template-columns: repeat(4, 4fr);
-  grid-gap: 20px;
-  margin: 2% 2%;
+main #tienda .container_tienda {
+  display: flex;
 }
-main #tienda .container_grid .first {
+main #tienda .container_tienda .tienda_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-row: 1/span 2;
-  padding: 0%;
-  align-items: stretch;
+  margin-left: 20px;
 }
-main #tienda .container_grid .first button {
+main #tienda .container_tienda .tienda_menu button {
   background-color: #facbd4;
   border: 1px solid #facbd4;
 }
-main #tienda .container_grid .shop .card {
+main #tienda .container_tienda .productos {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+main #tienda .container_tienda .productos ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main #tienda .container_tienda .productos ul li {
+  display: flex;
+  padding: 50px 2px;
+  justify-content: center;
+}
+@media (min-width: 40rem) {
+  main #tienda .container_tienda .productos ul li li {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  main #tienda .container_tienda .productos ul li .cards_item {
+    width: 33.3333%;
+  }
+}
+main #tienda .container_tienda .productos ul li .card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   width: 50%;
 }
-main #tienda .container_grid .shop .card img {
+main #tienda .container_tienda .productos ul li .card .card_image img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+main #tienda .container_tienda .productos ul li .card .card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+main #tienda .container_tienda .productos ul li .card .card_content h2 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+main #tienda .container_tienda .productos ul li .card .card_content p {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+main #tienda .container_tienda .productos ul li .card .card_content button {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
   width: 100%;
-  height: 90%;
-  border: 1px solid pink;
-  object-fit: contain;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
 }
-main #tienda .container_grid .shop .card .card-body h5 {
-  font-weight: bold;
-}
-main #tienda .container_grid .shop .card .card-body a {
-  background-color: #facbd4;
-  border: 1px solid #facbd4;
-  color: #000;
-}
-main #tienda .container_grid .shop .card .card-body a:hover {
-  background-color: #ff748c;
+main #tienda .container_tienda .productos ul li .card .card_content button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 footer {

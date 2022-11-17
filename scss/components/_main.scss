@@ -280,18 +280,18 @@ main {
             .shop {
                  
                 .card {
-                    width: 100%;
+                    width: 40%;
 
                     img {
                         width: 100%;
-                        height: 20%;
+                        height: 100%;
                         border: 1px solid pink;
+                        object-fit: contain;
                     }
                     .card-body {
                         
                         h5 {
                             font-weight: bold;
-                      
                         }
                         p {
                             

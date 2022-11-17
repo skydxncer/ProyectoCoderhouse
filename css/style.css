@@ -274,11 +274,11 @@ main #tienda .container_grid .first button {
   border: 1px solid #facbd4;
 }
 main #tienda .container_grid .shop .card {
-  width: 40%;
+  width: 50%;
 }
 main #tienda .container_grid .shop .card img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   border: 1px solid pink;
   object-fit: contain;
 }

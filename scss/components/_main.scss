@@ -280,13 +280,14 @@ main {
             .shop {
                  
                 .card {
-                    width: 40%;
-
+                    width: 50%;
+            
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: 90%;
                         border: 1px solid pink;
                         object-fit: contain;
+                        
                     }
                     .card-body {
                         

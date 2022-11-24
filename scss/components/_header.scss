@@ -28,26 +28,31 @@
                     /*Acá hay un <a> y un <button> del toggle bar*/
                 div {
                     ul {
+
                         li {
+
+                            height: 30px;
                             list-style-type: none;
                             font-size: small;
                             font-weight: bold;
     
                             margin-left: 10px;
                             padding: 0px 20px;
-                            margin-top: 10px;
-                            border: 1px solid rgba(177, 22, 130, 0.3);
-                            border-radius: 20px;
-                            box-shadow: inset 0px 0px 70px 0px rgba(225, 160, 190, 1);
+                            box-shadow: inset 0px 0px 42px 0px rgba(255, 240, 245, 1);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            
                             
                             &:hover {
-                                box-shadow: inset 0px 0px 42px 0px rgba(255, 240, 245, 1);
-                                color: black;
+                                
+                                border: 1px solid rgba(177, 22, 130, 0.212);
+                                
                              }
                         
                             a {
-                                text-decoration: none;
-                                color: black;
+                                
+                               
                             }
                         }
                     }

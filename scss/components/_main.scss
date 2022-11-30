@@ -135,8 +135,6 @@ main {
                         display: flex;
                         flex-direction: column;
 
-
-
                         li {
                             list-style-type: none;
                             margin: 2px;
@@ -290,8 +288,7 @@ main {
 
                     height: auto;
                     display: flex;
-                    flex-direction: column;
-                    
+                    flex-direction: column; 
                 }
 
 
@@ -323,6 +320,7 @@ main {
                     @media (max-width: 599px) {
                         display: flex;
                         flex-direction: column;
+                        
                     }
 
                     li {

@@ -91,6 +91,11 @@ main #tratamientos {
     flex-direction: column;
   }
 }
+@media (max-width: 599px) {
+  main #tratamientos {
+    margin-top: 2%;
+  }
+}
 main #tratamientos .flip_card {
   background-color: transparent;
   width: 404px;
@@ -253,6 +258,12 @@ main #tienda {
   width: 100%;
   height: auto;
   margin-top: 100px;
+  /*MOBILE
+  @media (max-width:     ) {
+
+  }
+
+  */
 }
 main #tienda .text {
   display: flex;
@@ -261,6 +272,12 @@ main #tienda .text {
 main #tienda .container_tienda {
   display: flex;
   margin: 50px;
+}
+@media (max-width: 650px) {
+  main #tienda .container_tienda {
+    height: auto;
+    display: flex;
+  }
 }
 main #tienda .container_tienda .dropdown_menu button {
   background-color: #facbd4;

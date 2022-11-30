@@ -135,6 +135,8 @@ main {
                         display: flex;
                         flex-direction: column;
 
+
+
                         li {
                             list-style-type: none;
                             margin: 2px;
@@ -278,10 +280,19 @@ main {
 
                 height: auto;
                 display: flex;
+                flex-direction: column;
             }
 
 
             .dropdown_menu {
+
+                @media (max-width: 650px) {
+
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
 
 
                 button {
@@ -308,6 +319,11 @@ main {
                     margin: 0;
                     padding: 0;
                     width: 90%;
+
+                    @media (max-width: 599px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
 
                     li {
                         display: flex;

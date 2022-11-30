@@ -277,6 +277,14 @@ main #tienda .container_tienda {
   main #tienda .container_tienda {
     height: auto;
     display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  main #tienda .container_tienda .dropdown_menu {
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 main #tienda .container_tienda .dropdown_menu button {
@@ -297,6 +305,12 @@ main #tienda .container_tienda .productos ul {
   margin: 0;
   padding: 0;
   width: 90%;
+}
+@media (max-width: 599px) {
+  main #tienda .container_tienda .productos ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 main #tienda .container_tienda .productos ul li {
   display: flex;

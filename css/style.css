@@ -84,6 +84,13 @@ main #tratamientos {
   align-items: center;
   margin-top: -100px;
 }
+@media (max-width: 1162px) {
+  main #tratamientos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 main #tratamientos .flip_card {
   background-color: transparent;
   width: 404px;
@@ -91,6 +98,11 @@ main #tratamientos .flip_card {
   perspective: 1000px;
   display: inline-block;
   align-items: center;
+}
+@media (max-width: 1162px) {
+  main #tratamientos .flip_card {
+    margin-top: 10%;
+  }
 }
 main #tratamientos .flip_card .card {
   position: relative;

@@ -195,6 +195,7 @@ main {
         justify-content: space-around;
         padding: 60px 0px 60px 0px;
 
+
         .ubicacion_mapa {
             width: 48%;
             display: flex;
@@ -202,9 +203,16 @@ main {
             margin-bottom: 50px;
             border: 2px solid $bg-general;
 
+            @media (max-width: 650px) {
+
+                height: auto;
+                width: 80%;  
+            }
+
             iframe {
                 width: 100%;
                 height: 300px;
+
             }
         }
 
@@ -215,6 +223,12 @@ main {
             flex-direction: column;
             align-items: center;
             height: auto;
+
+            @media (max-width: 650px) {
+
+                height: auto;
+                width: 80%;  
+            }
 
             h2 {
                 /*Agregar estilo */
@@ -257,14 +271,6 @@ main {
         margin-top: 100px;
 
 
-        /*MOBILE
-        @media (max-width:     ) {
-            
-        }
-
-        */
-
-
         .text {
             display: flex;
             justify-content: center;
@@ -289,6 +295,7 @@ main {
                     height: auto;
                     display: flex;
                     flex-direction: column; 
+                    margin-bottom: 10%;
                 }
 
 
@@ -329,17 +336,14 @@ main {
                         padding-bottom: 10px;
                         width: 30%;
 
-                        @media (min-width: 40rem) {
-                            li {
-                                width: 50%;
-                            }
+
+                        @media (max-width: 650px) {
+
+                            height: auto;
+                            display: flex;
+                            width:fit-content; 
                         }
 
-                        @media (min-width: 56rem) {
-                            .cards_item {
-                                width: 33.3333%;
-                            }
-                        }
 
                         .card {
                             background-color: white;

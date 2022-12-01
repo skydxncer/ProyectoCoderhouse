@@ -215,6 +215,12 @@ main #ubicacion .ubicacion_mapa {
   margin-bottom: 50px;
   border: 2px solid #facbd4;
 }
+@media (max-width: 650px) {
+  main #ubicacion .ubicacion_mapa {
+    height: auto;
+    width: 80%;
+  }
+}
 main #ubicacion .ubicacion_mapa iframe {
   width: 100%;
   height: 300px;
@@ -226,6 +232,12 @@ main #ubicacion .ubicacion_contacto {
   flex-direction: column;
   align-items: center;
   height: auto;
+}
+@media (max-width: 650px) {
+  main #ubicacion .ubicacion_contacto {
+    height: auto;
+    width: 80%;
+  }
 }
 main #ubicacion .ubicacion_contacto h2 {
   /*Agregar estilo */
@@ -258,12 +270,6 @@ main #tienda {
   width: 100%;
   height: auto;
   margin-top: 100px;
-  /*MOBILE
-  @media (max-width:     ) {
-
-  }
-
-  */
 }
 main #tienda .text {
   display: flex;
@@ -285,6 +291,7 @@ main #tienda .container_tienda {
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10%;
   }
 }
 main #tienda .container_tienda .dropdown_menu button {
@@ -318,14 +325,11 @@ main #tienda .container_tienda .productos ul li {
   padding-bottom: 10px;
   width: 30%;
 }
-@media (min-width: 40rem) {
-  main #tienda .container_tienda .productos ul li li {
-    width: 50%;
-  }
-}
-@media (min-width: 56rem) {
-  main #tienda .container_tienda .productos ul li .cards_item {
-    width: 33.3333%;
+@media (max-width: 650px) {
+  main #tienda .container_tienda .productos ul li {
+    height: auto;
+    display: flex;
+    width: fit-content;
   }
 }
 main #tienda .container_tienda .productos ul li .card {
@@ -411,6 +415,12 @@ footer .footer_container {
 footer .footer_container .footer_contact {
   width: 20%;
 }
+@media (max-width: 750px) {
+  footer .footer_container .footer_contact {
+    height: auto;
+    display: flex;
+  }
+}
 footer .footer_container .footer_contact ul li {
   display: flex;
   list-style-type: none;
@@ -427,6 +437,11 @@ footer .footer_container .footer_logo {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 750px) {
+  footer .footer_container .footer_logo {
+    display: none;
+  }
+}
 footer .footer_container .footer_logo img {
   width: 10%;
   height: auto;
@@ -437,6 +452,14 @@ footer .footer_container .footer_legales {
   justify-content: flex-end;
   align-items: center;
   width: 20%;
+}
+@media (max-width: 750px) {
+  footer .footer_container .footer_legales {
+    height: auto;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+  }
 }
 footer .footer_container .footer_legales p {
   margin-right: 10px;

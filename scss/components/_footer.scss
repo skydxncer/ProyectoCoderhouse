@@ -35,9 +35,17 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 10px 0px 10px 0px;
+ 
 
         .footer_contact {
             width: 20%;
+
+            @media (max-width: 750px) {
+
+                height: auto;
+                display: flex;
+            }   
+
             ul {
                
                 li {
@@ -63,6 +71,10 @@ footer {
             justify-content: center;
             align-items: center;
 
+            @media (max-width: 750px) {
+                display: none;
+            }
+
             img {
                 width: 10%;
                 height: auto;
@@ -75,6 +87,16 @@ footer {
             justify-content: flex-end;
             align-items: center;
             width: 20%;
+
+            @media (max-width: 750px) {
+
+                height: auto;
+                display: flex;
+                width: max-content;
+                justify-content: center;
+            } 
+
+
             p {
                 margin-right: 10px; 
             }
